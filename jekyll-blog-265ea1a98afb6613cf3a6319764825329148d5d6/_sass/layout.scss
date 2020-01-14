@@ -1,0 +1,168 @@
+body {
+	margin: 0;
+	min-height:100vh;
+	color: $font-color;
+	font-family: $font-style;
+	font-size: 16px;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	background: #31b3f9; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #31b3f9 0%, #70e2ff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #31b3f9 0%,#70e2ff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #31b3f9 0%,#70e2ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31b3f9', endColorstr='#70e2ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+h1,
+h2,
+h3 {
+	font-weight: 600;
+	color: $heading-font-color;
+	font-family: $heading-font;
+	line-height: 1.5;
+}
+h1 {
+	color: $main;
+	font-size: 2.5em;
+	a,
+	a:visited {
+		text-decoration: none;
+		color: $main;
+	}
+}
+h2 {
+	font-size: 2em;
+}
+a,
+a:visited {
+	color: $link-color;
+	text-decoration: underline;
+	font-weight: bold;
+}
+a:hover {
+	color: $link-hover-color;
+	text-decoration: underline;
+}
+header {
+	padding: 2rem;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	img {
+		max-width:200px;
+	}
+
+	nav {
+
+		
+		a , a:visited {
+			background-color:  $link-color;	
+			color:$main;
+			text-decoration:none;
+			padding:10px 20px;
+			margin-left:1rem;
+		}
+
+		a:hover  {
+			background-color:  $main;
+			color: $link-color;	
+			text-decoration:none;
+			margin-left:1rem;
+		}
+		
+		
+	}
+}
+main {
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.wrapper {
+	
+	margin: 2rem;
+}
+
+/* Aside */
+
+aside {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	z-index: 2;
+	border-bottom: 1px solid lighten($light, 30%);
+	box-shadow: 0px 1px 1px RGBA(4, 25, 54, .1);
+	nav {
+		float: left;
+		max-width: 800px;
+		margin: 0 auto;
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li {
+				float: left;
+				position: relative;
+				a {
+					text-decoration: none;
+					display: block;
+					padding: 15px;
+					font-family: 'Muli', sans-serif;
+					line-height: 20px;
+					margin-bottom: -1px;
+					box-shadow: 0;
+					&:hover,
+					&:active {
+			
+						text-decoration: none;
+						color: $main;
+					}
+				}
+			}
+		}
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
+}
+footer {
+	text-align: center;
+	padding: 40px;
+}
+
+/* Hero - feel free to delete this, it is just to be pretty. :) */
+
+.main-title {
+	text-align:center;
+	font-size:5rem;
+}
+
+.hero {
+
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 75vw;
+    margin: auto;
+	font-size: 6rem;
+	
+	span {
+		padding:2rem;
+	}
+
+	.jekyll {
+		width: 20vw;
+	}
+
+	.octocat {
+		width: 15vw;
+	}
+	.siteleaf {
+		width: 10vw;
+	}
+
+}

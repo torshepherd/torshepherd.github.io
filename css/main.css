@@ -1,15 +1,21 @@
 body {
-	margin: 40px auto;
-	width: 800px;
-	color: rgba(0, 0, 0, 0.8);
-	font-size: 14px;
-	font-family: 'Roboto';
+    margin: 40px auto;
+    width: 800px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    font-family: 'Roboto';
 }
 
 .row {
-	display: flex;
+    display: flex;
 }
   
 .column {
-	flex: 50%;
+    flex: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
